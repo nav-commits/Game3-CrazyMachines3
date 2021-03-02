@@ -15,10 +15,12 @@ public class MoveBall : MonoBehaviour
 
     public void Move()
     {
-        var move = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+        //var move = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+        var move = 1f * Time.deltaTime * speed;
         var newpos = transform.position.x + move;
         transform.position = new Vector2(newpos, transform.position.y);
     }
 }
+
 
 
