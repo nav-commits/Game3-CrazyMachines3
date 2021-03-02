@@ -214,6 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1305040716}
   - component: {fileID: 1305040715}
+  - component: {fileID: 1305040717}
   m_Layer: 0
   m_Name: Rectangle
   m_TagString: Untagged
@@ -278,13 +279,31 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1305040714}
-  m_LocalRotation: {x: -0.0033481494, y: -0.023175472, z: -0.14294578, w: 0.9894535}
-  m_LocalPosition: {x: 0.76, y: 1.24, z: 0.05}
+  m_LocalRotation: {x: 0.12087627, y: -0.099387385, z: -0.16465451, w: 0.9738583}
+  m_LocalPosition: {x: 0.45, y: 1.04, z: 0.04}
   m_LocalScale: {x: 7.0299964, y: 0.68881273, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -0.75900006, y: -2.5740001, z: -16.424002}
+  m_LocalEulerAnglesHint: {x: 11.695001, y: -13.788001, z: -20.612001}
+--- !u!68 &1305040717
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305040714}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.64, y: 0}
+  - {x: 0.64, y: 0}
 --- !u!1 &1412202604
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,13 +378,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412202604}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.0098518655, y: -0.03605974, z: -0.0034746563, w: 0.99929506}
   m_LocalPosition: {x: -0.109, y: 0.076, z: 0}
   m_LocalScale: {x: 1.4876977, y: 0.951937, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.1140001, y: -4.138, z: -0.439}
 --- !u!1 &1752023350
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,9 +395,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1752023352}
   - component: {fileID: 1752023351}
-  - component: {fileID: 1752023354}
-  - component: {fileID: 1752023353}
   - component: {fileID: 1752023355}
+  - component: {fileID: 1752023353}
+  - component: {fileID: 1752023354}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -444,29 +463,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752023350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.87, y: 3.03, z: 0}
+  m_LocalPosition: {x: -2.31, y: 3.8, z: 0}
   m_LocalScale: {x: 0.8330168, y: 0.8330164, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1752023353
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1752023350}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: 1c3de1a0a2fd3401ca122942a504be7f, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.6399999
---- !u!50 &1752023354
+--- !u!50 &1752023353
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -474,7 +477,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752023350}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -487,6 +490,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &1752023354
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752023350}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6399999
 --- !u!114 &1752023355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -499,4 +518,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdbbcbb4409b74c29a5c933dc617219b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2

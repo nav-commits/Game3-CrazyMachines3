@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class MoveBall : MonoBehaviour
 {
-    public float speed = 0.5f;
-
+    //public float speed = 0.5f;
 
     void Update()
     {
-        Move();
+        //Move();
 
     }
 
-    public void Move()
-    {
-        //var move = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
-        var move = 1f * Time.deltaTime * speed;
-        var newpos = transform.position.x + move;
-        transform.position = new Vector2(newpos, transform.position.y);
-    }
+    //public void Move()
+    //{
+    //    //var move = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
+    //    var move = 5.2f * Time.deltaTime * speed;
+    //    var moveY = 0.76f * Time.deltaTime * speed;
+    //    var newpos = transform.position.x + move;
+    //    transform.position = new Vector2(newpos, moveY);
+    //}
 }
 
 
